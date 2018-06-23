@@ -1,0 +1,31 @@
+<div>
+  {
+    props.error &&
+    <p className="text-center">{props.error}</p>
+  }
+  <div classname="row">
+
+  {
+    props.image &&
+
+    <div className="col">
+      <img src={props.image} alt="Movie Poster" className="image"/>
+    </div>
+  }
+  {
+    props.title &&
+    props.releaseDate &&
+    props.genres &&
+    props.overview &&
+
+      <div className="col">
+        <div>
+          <p>{props.title}</p>
+          <p>{props.releaseDate}</p>
+          <p>{props.genres}</p>
+          <p>{props.overview}</p>
+        </div>
+      </div>
+  }
+  </div>
+</div>
